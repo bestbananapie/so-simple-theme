@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Who does "Simon" think he is?
+title: ":Who does Simon think he is?"
 excerpt: ""
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
   feature: theme-about.jpg
   credit: Simon Lee
+  creditlink: https://simonlee.me
 ---
 
 I am a engineer working and living in London. I like it here because I get to sample great food from different cuisines and it nevers gets too hot so that I have to start seriously thinking about wearing shorts. 
