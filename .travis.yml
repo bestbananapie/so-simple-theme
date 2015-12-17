@@ -3,8 +3,8 @@ rvm:
 - 2.1
 
 script:
-- bundle exec jekyll build --config _config.yml,_config_s3.yml
-- bundle exec htmlproof ./_site --only-4xx
+- bundle exec jekyll build --config _config.yml,_config_deploy.yml
+- bundle exec htmlproof ./_site --only-4xx --disable-external
 
 deploy:
   provider: s3
