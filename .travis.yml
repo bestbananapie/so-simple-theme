@@ -1,6 +1,9 @@
 language: ruby
 rvm:
 - 2.1
+gemfile: jekyll/Gemfile
+before_script:
+- cd jekyll
 script:
 - bundle exec jekyll build --config _config.yml,_config_deploy.yml
 - bundle exec htmlproof ./_site --only-4xx --disable-external
@@ -13,7 +16,7 @@ deploy:
   bucket: simonlee.me
   skip_cleanup: true
   region: eu-west-1
-  local_dir: _site
+  local_dir: $TRAVIS_BUILD_DIR/jekyll/_site
 branches:
   only:
   - master
